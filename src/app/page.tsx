@@ -1,18 +1,14 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        <h1>Infoweb - Atividade 1 do 2o bimestre</h1>
-      </header>
-      <main>
-        <h2>Atividade 1 do 2o bimestre com hook reducer e shadcnui</h2>
-      </main>
-      <footer>
-        <p>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</p>
-        <p><a href="https://fsf.org/">Copyright (C) 2007 Free Software Foundation, Inc.</a></p>
-      </footer>
-    </div>
+    <>
+      <h2>Atividade 1 do 2o bimestre com hook reducer e shadcnui</h2>
+      <nav style={{ marginTop: '2em' }}>
+        <ul style={{ display: 'flex', gap: '1em', listStyle: 'none', padding: 0 }}>
+          <li><Link href="/tarefas">Lista de Tarefas</Link></li>
+        </ul>
+      </nav>
+    </>
   );
 }
