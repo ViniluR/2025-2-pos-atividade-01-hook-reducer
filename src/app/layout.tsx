@@ -29,11 +29,11 @@ export default function RootLayout({
         style={{backgroundColor: '#001326ff', color: '#EEE'}}
       >
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '1em' }}>
-          <header style={{ marginBottom: '2em', padding: '1.5em', background: '#0e315cff', color: 'white', borderRadius: '0.5em' }}>
-            <h1 style={{ fontSize: '30px' }}>Infoweb - Atividade 1 do 2o bimestre</h1>
+          <header style={{ marginBottom: '2em', padding: '1.5em', background: '#0e315cff', color: 'white', borderRadius: '.5em', boxShadow: '0 6px 18px #0004' }}>
+            <h1 style={{ fontSize: '30px', textAlign: 'center', margin: 0 }}>Infoweb - Atividade 1 do 2o bimestre</h1>
           </header>
-          <main style={{ flex: 1, padding: '1.5em' }}>{children}</main>
-          <footer style={{ marginTop: '2em', padding: '1.5em', background: '#00040aff', color: '#ddd', borderRadius: '0.5em', fontSize: '14px' }}>
+          <main style={{ flex: 1, padding: '1.5em', borderRadius: '.5em'}}>{children}</main>
+          <footer style={{ marginTop: '2em', padding: '1.5em', background: '#00040aff', color: '#ddd', borderRadius: '.5em', fontSize: '14px', boxShadow: '0 6px 18px #0004' }}>
             <p>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</p>
             <p><a href="https://fsf.org/" style={{ color: '#ddd' }}>Copyright (C) 2007 Free Software Foundation, Inc.</a></p>
           </footer>

@@ -15,7 +15,9 @@ export function tarefasReducer(state: Tarefa[], action: TarefasAction): Tarefa[]
     case 'remover':
       return state.filter(t => t.id !== action.id);
     case 'concluir':
-      return state.map(t => t.id === action.id ? { ...t, concluida: true } : t);
+      return state.map(t =>
+        t.id === action.id ? { ...t, concluida: !t.concluida } : t
+      );
     default:
       return state;
   }
