@@ -14,8 +14,8 @@ export default function TarefaItem({ tarefa, onToggle }: TarefaProps) {
         cursor: "pointer",
         padding: "1em",
         backgroundColor: '#222f45ff',
-  borderRadius: '.5em',
-  boxShadow: '0 6px 18px #0004',
+        borderRadius: '.5em',
+        boxShadow: '0 6px 18px #0004',
         opacity: tarefa.concluida ? 0.6 : 1,
         textDecoration: tarefa.concluida ? "line-through" : "none",
         transition: "all 0.2s",
@@ -32,7 +32,7 @@ export default function TarefaItem({ tarefa, onToggle }: TarefaProps) {
             href={`/tarefas/${tarefa.id}`}
             title="Editar tarefa"
             style={{
-              color: '#fff',
+              color: '#e9ecf7',
               background: 'none',
               border: 'none',
               borderRadius: '0.3em',
@@ -53,7 +53,7 @@ export default function TarefaItem({ tarefa, onToggle }: TarefaProps) {
             href={`/tarefas/${tarefa.id}/apagar`}
             title="Apagar tarefa"
             style={{
-              color: '#fff',
+              color: '#e9ecf7',
               background: 'none',
               border: 'none',
               borderRadius: '0.3em',
