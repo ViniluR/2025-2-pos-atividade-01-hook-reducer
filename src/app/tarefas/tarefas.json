@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "titulo": "Estudar React",
+    "descricao": "Ler documentação do useReducer",
+    "concluida": true
+  },
+  {
+    "id": "2",
+    "titulo": "Fazer atividade",
+    "descricao": "Implementar CRUD de tarefas",
+    "concluida": false
+  },
+  {
+    "id": "3",
+    "titulo": "Revisar código",
+    "descricao": "Verificar padrões e boas práticas no projeto",
+    "concluida": true
+  },
+  {
+    "id": "4",
+    "titulo": "Testar aplicação",
+    "descricao": "Executar testes manuais nas páginas de tarefas",
+    "concluida": false
+  },
+  {
+    "id": "5",
+    "titulo": "Documentar funções",
+    "descricao": "Adicionar comentários explicativos no reducer",
+    "concluida": true
+  },
+  {
+    "id": "6",
+    "titulo": "Enviar para o GitHub",
+    "descricao": "Fazer commit e push das alterações finais",
+    "concluida": true
+  },
+  {
+    "id": "7",
+    "titulo": "Apresentar atividade",
+    "descricao": "Mostrar o funcionamento para o professor",
+    "concluida": false
+  }
+]
