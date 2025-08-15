@@ -1,5 +1,6 @@
 "use client";
 import TarefaItem from "./tarefa";
+import FormularioTarefa from "./FormularioTarefa";
 import { useReducer, useEffect, useState } from "react";
 import Link from "next/link";
 import { tarefasReducer } from "../lib/tarefasReducer";
@@ -14,7 +15,6 @@ interface Props {
 
 export default function TarefasClient({ tarefasIniciais }: Props) {
 	const [isMounted, setIsMounted] = useState(false);
-	// Carrega tarefas do localStorage na primeira montagem
 	const [state, dispatch] = useReducer(
 		tarefasReducer,
 		tarefasIniciais,
@@ -43,8 +43,9 @@ export default function TarefasClient({ tarefasIniciais }: Props) {
 		dispatch({ type: "concluir", id });
 	}
 
-	return (
-		<div>
+
+		return (
+			<div style={{ position: 'relative' }}>
 			<div
 				style={{
 					display: 'grid',
@@ -96,12 +97,16 @@ export default function TarefasClient({ tarefasIniciais }: Props) {
 							listStyle: 'none',
 						}}
 					>
-						{state.map((t) => (
-							<TarefaItem key={t.id} tarefa={t} onToggle={handleToggle} />
-						))}
+												{[...state].reverse().map((t) => (
+													<TarefaItem
+														key={t.id}
+														tarefa={t}
+														onToggle={handleToggle}
+													/>
+												))}
 					</ul>
 				)
 			) : null}
-		</div>
-	);
+				</div>
+			);
 }
